@@ -2,16 +2,18 @@ import React, {FC} from "react";
 import styles from "./label.module.scss"
 
 type PropsT = {
-   bgColor: string
+    bgColor: string
 }
 
 export const Label: FC<PropsT> = ({
-                                     children,
-                                     bgColor,
+                                      children,
+                                      bgColor,
                                   }) => {
-   return (
-      <div className={styles.wrapper} style={{backgroundColor: bgColor}}>
-         {children}
-      </div>
-   )
-}
+    return (
+        <div className={styles.wrapper}>
+            <div style={{backgroundColor: bgColor}}>
+                <div className={styles.header}> {children} </div>
+            </div>
+        </div>
+    )
+};
