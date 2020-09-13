@@ -1,4 +1,30 @@
 .wrapper {
   padding: 0 10px;
+  min-height: 90px;
+
   background-color: #fff;
+  border-radius: 8px;
+
+  margin: 10px;
+}
+
+.item {
+  max-height: 18px;
+  width: 90%;
+
+  padding-left: 12px;
+  margin-top: 14px;
+
+  wrap: none;
+  resize: none;
+
+  background-color: white;
+}
+
+.label {
+  box-sizing: content-box;
+  max-width: 30%;
+
+  margin-top: -5px;
+  margin-left: 6px;
 }
